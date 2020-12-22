@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="stylesheet.css" rel="stylesheet">
+        <script src="calculator.js"></script>
+
+    </head>
+    <body>
+        <div class="calculator">
+            <div id="display" >
+                <p id="output">0</p>
+            </div>
+            <div id="input">
+                <div>
+                    <!-- row 1 -->
+                    <button class="misc" onclick="clearFunction()">AC</button>
+                    <button class="misc">+/-</button> <!-- onclick="SwitchSign()" -->
+                    <button class="misc">%</button> <!-- onclick="Percentage()" -->
+                    <button class="operation">/</button> <!-- onclick="Division()" -->
+                </div>
+                <div>
+                    <!-- row 2 -->
+                    <button class="number" onclick="Insert7()">7</button>
+                    <button class="number" onclick="Insert8()">8</button>
+                    <button class="number" onclick="Insert9()">9</button>
+                    <button class="operation">*</button> <!-- onclick="Multiplication()" -->
+                </div>
+                <div> 
+                    <!-- row 3 -->
+                    <button class="number" onclick="Insert4()">4</button>
+                    <button class="number" onclick="Insert5()">5</button>    
+                    <button class="number" onclick="Insert6()">6</button>
+                    <button class="operation">-</button>
+                </div>
+                <div>
+                    <!-- row 4 -->
+                    <button class="number" onclick="Insert1()">1</button>
+                    <button class="number" onclick="Insert2()">2</button>
+                    <button class="number" onclick="Insert3()">3</button>
+                    <button class="operation">+</button><!-- onclick="Addition()" -->
+                </div>
+                
+                
+                <div>
+                    <!-- row 5 -->
+                    <button class="number" id="zero" onclick="Insert0()">0</button>
+                    <button class="number" onclick="Insertdec()">.</button>    
+                    <button class="operation">=</button> <!-- onclick="GiveOutput()" -->
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>

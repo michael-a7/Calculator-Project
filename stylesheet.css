@@ -1,0 +1,32 @@
+
+.calculator{
+    border: blue solid 5px;
+    margin: 30px 200px;
+    text-align: center;
+}
+button{
+    border-radius: 30px;
+    color: white;
+    width: 30px;
+    margin: 5px 0px;
+}
+.number{
+    background-color: hotpink;
+}
+.operation{
+    background-color: orange;
+}
+.misc{
+    background-color: darkgray;
+}
+#input{
+    background-color: rgb(23, 165, 221);
+}
+#display{
+    text-align: right;
+    padding-right: 10px;
+}
+#zero{
+    padding-left: 10px;
+    padding-right: 50px;
+}
