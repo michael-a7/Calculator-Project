@@ -1,38 +1,38 @@
-document.getElementById("output").value="0";
+var input = ""
 
 function clearFunction() {
     document.getElementById("output").innerHTML = "0";
 }
-function Insert0() {
-    document.getElementById("output").innerHTML = "0";
+function  Insert0(input){
+    console.log(input + "0"); 
 }
-function Insert1() {
-    document.getElementById("output").innerHTML = "1";
+function  Insert1(input){
+    console.log(input + "1"); 
 }
-function Insert2() {
-    document.getElementById("output").innerHTML = "2";
+function  Insert2(input){
+    console.log(input + "2"); 
 }
-function Insert3() {
-    document.getElementById("output").innerHTML = "3";
+function  Insert3(input){
+    console.log(input + "3"); 
 }
-function Insert4() {
-    document.getElementById("output").innerHTML = "4";
+function  Insert4(input){
+    console.log(input + "4"); 
 }
-function Insert5() {
-    document.getElementById("output").innerHTML = "5";
+function  Insert5(input){
+    console.log(input + "5"); 
 }
-function Insert6() {
-    document.getElementById("output").innerHTML = "6";
+function  Insert6(input){
+    console.log(input + "6"); 
 }
-function Insert7() {
-    document.getElementById("output").innerHTML = "7";
+function  Insert7(input){
+    console.log(input + "7"); 
 }
-function Insert8() {
-    document.getElementById("output").innerHTML = "8";
+function  Insert8(input){
+    console.log(input + "8"); ;
 }
-function Insert9() {
-    document.getElementById("output").innerHTML = "9";
+function  Insert9(input){
+    console.log(input + "9"); 
 }
-function Insertdec() {
-    document.getElementById("output").innerHTML = ".";
+function  Insert.(input){
+    console.log(input + "."); 
 }
