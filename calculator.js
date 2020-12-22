@@ -1,6 +1,5 @@
 document.getElementById("output").value="0";
 
-let number = 
 function clearFunction() {
     document.getElementById("output").innerHTML = "0";
 }
