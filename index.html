@@ -3,42 +3,42 @@
     <head>
         <title>Calculator</title>
         <link href="stylesheet.css" rel="stylesheet">
-        <script src="calculator.js"></script>
 
     </head>
     <body>
         <div class="calculator">
-            <div id="display">
+            <div id="display" >
                 <p id="myIn">0</p>
             </div>
-            <div id="inputDisplay">
+            <div id="input">
+                
                 <div>
                     <!-- row 1 -->
-                    <button class="misc" onclick="clearFunction()">AC</button>
-                    <button class="misc">+/-</button> <!-- onclick="SwitchSign()" -->
-                    <button class="misc">%</button> <!-- onclick="Percentage()" -->
-                    <button class="operation">/</button> <!-- onclick="Division()" -->
+                    <button class="misc" onclick="AC()">AC</button>
+                    <button class="misc" onclick="Negate()">±</button> 
+                    <button class="misc" onclick="Percent()">%</button> 
+                    <button class="operation" onclick="Division()">/</button>
                 </div>
                 <div>
                     <!-- row 2 -->
                     <button class="number" onclick="Insert7()">7</button>
                     <button class="number" onclick="Insert8()">8</button>
                     <button class="number" onclick="Insert9()">9</button>
-                    <button class="operation">*</button> <!-- onclick="Multiplication()" -->
+                    <button class="operation" onclick="Multiplication()">*</button>
                 </div>
                 <div> 
                     <!-- row 3 -->
                     <button class="number" onclick="Insert4()">4</button>
                     <button class="number" onclick="Insert5()">5</button>    
                     <button class="number" onclick="Insert6()">6</button>
-                    <button class="operation">-</button>
+                    <button class="operation" onclick="Subtraction()">-</button>
                 </div>
                 <div>
                     <!-- row 4 -->
                     <button class="number" onclick="Insert1()">1</button>
                     <button class="number" onclick="Insert2()">2</button>
                     <button class="number" onclick="Insert3()">3</button>
-                    <button class="operation">+</button><!-- onclick="Addition()" -->
+                    <button class="operation" onclick="Addition()">+</button>
                 </div>
                 
                 
@@ -46,12 +46,10 @@
                     <!-- row 5 -->
                     <button class="number" id="zero" onclick="Insert0()">0</button>
                     <button class="number" onclick="Insertdec()">.</button>    
-                    <button class="operation">=</button> <!-- onclick="GiveOutput()" -->
+                    <button class="operation" onclick="Output()">=</button>
                 </div>
             </div>
         </div>
-        
-        
-        
+        <script src="calculator.js"></script>        
     </body>
 </html>

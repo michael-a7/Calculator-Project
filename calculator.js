@@ -1,38 +1,138 @@
-var input = ""
+const element = document.getElementById("myIn");
+let value1 = "";
+let value2 = "";
+let operation = "";
+// Digits
+function Insert0(){
+        value1 = value1 + "0";
+    element.innerHTML = value1;
+}
+function Insert1() {
+    value1 = value1 + "1";
+    element.innerHTML = value1;
+}
+function Insert2() {
+        value1 = value1 + "2";
+    element.innerHTML = value1;
+}
+function Insert3() {
+    value1 = value1 + "3";
+element.innerHTML = value1;
+}
+function Insert4() {
+    value1 = value1 + "4";
+element.innerHTML = value1;
+}
+function Insert5() {
+    value1 = value1 + "5";
+element.innerHTML = value1;
+}
+function Insert6() {
+    value1 = value1 + "6";
+element.innerHTML = value1;
+}
+function Insert7() {
+    value1 = value1 + "7";
+element.innerHTML = value1;
+}
+function Insert8() {
+    value1 = value1 + "8";
+element.innerHTML = value1;
+}
+function Insert9() {
+    value1 = value1 + "9";
+element.innerHTML = value1;
+}
+// Operations
+function Addition(){//PROBLEM
+    if(value2!==''){
+        value2= parseFloat(value2)+parseFloat(value1);
+        value1= '';
+        element.innerHTML = parseFloat(value1);
+    }
+    else{
+    value2 = value1;
+    value1 = "";
+    operation = "+";
+    }
+}
+function Subtraction(){
+    if(value2!==''){
+        value2= value2-value1;
+        value1= ''; 
+    }
+    else{
+    value2 = value1;
+    value1 = "";
+    operation = "-";
+    }
+}
+function Multiplication(){
+    if(value2!==''){
+        value2= value2*value1;
+        value1= ''; 
+    }
+    else{
+    value2 = value1;
+    value1 = "";
+    operation = "*";
+    }
+}
+function Division(){
+    if(value2!==''){
+        value2= value2/value1;
+        value1= ''; 
+    }
+    else{
+    value2 = value1;
+    value1 = "";
+    operation = "/";
+    }
+}
+//Output
+function Output(){
+    //Single value w/o operation = value
+    if(value1!=='' && value2==''){
+        value1=value1;
+    }
+    else{
+    switch(operation){
+        case '+':
+            value1 = parseFloat(value2) + parseFloat(value1);
+            break;
+        case '-':
+            value1 = value2-value1;
+            break;
+        case '*':
+            value1 = value2*value1;
+            break;
+        case '/':
+            value1 = value2/value1;    
+        }
+        element.innerHTML = parseFloat(value1);
+        value2 = "";
+    }      
+}
 
-function clearFunction() {
-    document.getElementById("output").innerHTML = "0";
+// Misc
+function Insertdec() {
+    if(value1.includes(".")===true){
+        value1 = value1;
+    }else{
+        value1 = value1 + ".";
+    }
+    element.innerHTML = value1;
 }
-function  Insert0(input){
-    console.log(input + "0"); 
+function AC() {
+    value1 = "0";
+    value2 = "";
+    element.innerHTML = value1;
 }
-function  Insert1(input){
-    console.log(input + "1"); 
+function Negate() {
+    value1 = -1*value1;
+    element.innerHTML = value1;
 }
-function  Insert2(input){
-    console.log(input + "2"); 
-}
-function  Insert3(input){
-    console.log(input + "3"); 
-}
-function  Insert4(input){
-    console.log(input + "4"); 
-}
-function  Insert5(input){
-    console.log(input + "5"); 
-}
-function  Insert6(input){
-    console.log(input + "6"); 
-}
-function  Insert7(input){
-    console.log(input + "7"); 
-}
-function  Insert8(input){
-    console.log(input + "8"); ;
-}
-function  Insert9(input){
-    console.log(input + "9"); 
-}
-function  Insert.(input){
-    console.log(input + "."); 
+function Percent(){
+    value1 = 0.01*value1;
+    element.innerHTML = value1;
 }
